@@ -7,10 +7,6 @@ namespace KvalitetProjekt.Domain
     {
         private List<SaleOrderLine> OrderLine = new List<SaleOrderLine>();
 
-
-
-
-
         private Costumer _customer;
         public Costumer Costumer
         {
