@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="label" Content="Find customer" HorizontalAlignment="Left" Margin="56,64,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Insert customer ID" HorizontalAlignment="Left" Margin="161,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.297,-0.417"/>
+        <Label x:Name="label2" Content="Create customer" HorizontalAlignment="Left" Margin="56,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.037,-1.049"/>
+        <Label x:Name="label3" Content="Create new order" HorizontalAlignment="Left" Margin="56,205,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Find" HorizontalAlignment="Left" Margin="292,67,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="New" HorizontalAlignment="Left" Margin="292,134,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
+        <Button x:Name="button2" Content="Start" HorizontalAlignment="Left" Margin="292,205,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="148,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
