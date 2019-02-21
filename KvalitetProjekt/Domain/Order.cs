@@ -1,22 +1,21 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KvalitetProjekt.Domain
 {
     public class Order
     {
-        private string OrderLines
+        private List<SaleOrderLine> OrderLine = new List<SaleOrderLine>();
+
+
+
+
+
+        private Costumer _customer;
+        public Costumer Costumer
         {
-            get;
-            set;
-        }
-        public string Costumer
-        {
-            get;
-            set;
+            get { return _customer; }
+            set { _customer = value; }
         }
         public string OrderID
         {
@@ -38,7 +37,15 @@ namespace KvalitetProjekt.Domain
             get;
             set;
         }
-        public AddOrder(string product, string quantity, string price)
+        public void AddOrderLine(string product, string quantity, string price)
+        {
+
+        }
+        public void RemoveOrderLines(string OrderID) //index af 
+        {
+
+        }
+        public void GetOrderLines()
         {
 
         }

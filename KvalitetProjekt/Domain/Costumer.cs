@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace KvalitetProjekt.Domain
 {
-    public class Costumor
+    public class Costumer
     {
-        public string Id
+        public int Id
         {
             get;
             set;
@@ -23,7 +23,7 @@ namespace KvalitetProjekt.Domain
             get;
             set;
         }
-        public string Zip
+        public int Zip
         {
             get;
             set;
