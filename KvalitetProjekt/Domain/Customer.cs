@@ -6,44 +6,37 @@ using System.Threading.Tasks;
 
 namespace KvalitetProjekt.Domain
 {
-    public class Order
+    public class Customer
     {
-        private string OrderLines
+        public string Id
         {
             get;
             set;
         }
-        public string Costumer
+        public string Name
         {
             get;
             set;
         }
-        public string OrderID
+        public string Address
         {
             get;
             set;
         }
-        public string OrderDate
+        public string Zip
         {
             get;
             set;
         }
-        public string DeliveryDate
+        public string Town
         {
             get;
             set;
         }
-        public string Picked
+        public string Telephone
         {
             get;
             set;
         }
-        public AddOrder(string product, string quantity, string price)
-        {
-            
-        }
-
     }
-
-
 }

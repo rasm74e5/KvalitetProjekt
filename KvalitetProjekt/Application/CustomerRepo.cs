@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KvalitetProjekt.Application
 {
-    class CostumerRepo
+    class CustomerRepo
     {
     }
 }
