@@ -59,17 +59,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Application\IDatabaseCon.cs" />
-    <Compile Include="Domain\Customer.cs" />
     <Compile Include="UserInterface\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Application\Controller.cs" />
-    <Compile Include="Application\CustomerRepo.cs" />
+    <Compile Include="Application\CostumerRepo.cs" />
     <Compile Include="Application\DBController.cs" />
     <Compile Include="Application\OrderRepo.cs" />
     <Compile Include="Application\ProductRepo.cs" />
+    <Compile Include="Domain\Costumer.cs" />
     <Compile Include="Domain\Order.cs" />
     <Compile Include="Domain\Product.cs" />
     <Compile Include="Domain\SaleOrderLine.cs" />
@@ -104,5 +103,6 @@
   <ItemGroup>
     <None Include="UserInterface\App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
