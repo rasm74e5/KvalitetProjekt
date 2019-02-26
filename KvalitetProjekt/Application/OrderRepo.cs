@@ -21,6 +21,10 @@ namespace KvalitetProjekt.Application
                     con.Open();
 
                 }
+                catch (SqlException e)
+                {
+                    Console.WriteLine("Fejl: " + e.Message);
+                }
             }
         }
     }
