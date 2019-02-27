@@ -8,5 +8,10 @@ namespace KvalitetProjekt.Application
 {
     class DBController
     {
+        public void ReadOrders()
+        {
+            OrderRepo orderRepo = new OrderRepo();
+            orderRepo.PullOrdersFromDatabase();
+        }
     }
 }
