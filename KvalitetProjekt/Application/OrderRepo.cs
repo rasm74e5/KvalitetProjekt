@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,25 @@ namespace KvalitetProjekt.Application
                 {
                     con.Open();
 
+                        SqlCommand cmd2 = new SqlCommand("GetAllOrdre", con);
+                        cmd2.CommandType = CommandType.StoredProcedure;
+
+                        SqlDataReader reader = cmd2.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                string ordreid = reader["OrdreID"].ToString();
+                                string ordrelines = reader["OrdreLines"].ToString();
+                                string customer = reader["Customer"].ToString();
+                                string ordredate = reader["OrdreDate"].ToString();
+                                string delivery = reader["Delivery"].ToString();
+                                string picked = reader["Picked"].ToString();
+                                Console.WriteLine($"\nOrdreID: {ordreid} \nOrdreLines: {ordrelines}\nCustomer: {customer} " +
+                                    $"\nOrdreDate: {ordredate} \nDelivery: {delivery}\nPicked: {picked}\n");
+                            }
+                        }
                 }
                 catch (SqlException e)
                 {
