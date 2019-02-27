@@ -24,5 +24,10 @@ namespace KvalitetProjekt
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
